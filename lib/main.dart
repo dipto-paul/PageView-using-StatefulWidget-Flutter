@@ -23,6 +23,14 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        endDrawer: Drawer( // sudhu drawer dile bam side e, endDrawer dile dan side e hobe
+          shadowColor: Colors.amber,
+
+        ),
+        appBar: AppBar(
+          title: Text("hello!"),
+          backgroundColor: Colors.blue,
+        ),
         body: PageView(
           controller: _controller,
           children: [
