@@ -24,7 +24,13 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         endDrawer: Drawer( // sudhu drawer dile bam side e, endDrawer dile dan side e hobe
-          shadowColor: Colors.amber,
+          child: Column(
+            children: [
+              DrawerHeader(child: Text("Navigation Drawer",style: TextStyle(color:Colors.black,fontSize: 20,fontWeight: FontWeight.bold)),
+              ),
+
+            ],
+          )
 
         ),
         appBar: AppBar(
