@@ -51,15 +51,15 @@ class _MyAppState extends State<MyApp> {
           elevation: 1, // ektu veshe thake
           centerTitle: true,// eitar karone majhkhane ache title
         ),
-        body: PageView(
-          controller: _controller,
-          children: [
-            page1(),
-            page2(),
-            page3(),
-
-          ],
-
+        body: Container(
+          child: PageView(
+            controller: _controller,
+            children: [
+              page1(),
+              page2(),
+              page3(),
+            ],
+          ),
 
         ),
 
@@ -80,6 +80,8 @@ class _MyAppState extends State<MyApp> {
               BottomNavigationBarItem(icon: Icon(Icons.person),label: "Profile"),
 
         ]),
+
+
       ),
     );
   }
