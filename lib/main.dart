@@ -45,8 +45,10 @@ class _MyAppState extends State<MyApp> {
 
         ),
         appBar: AppBar(
-          title: Text("Scroll Left <---"),
+          title: Text("Scroll Left <---",style: TextStyle(fontWeight: FontWeight.bold),),
           backgroundColor: Colors.blue,
+          elevation: 1, // ektu veshe thake
+          centerTitle: true,// eitar karone majhkhane ache title
         ),
         body: PageView(
           controller: _controller,
@@ -56,7 +58,20 @@ class _MyAppState extends State<MyApp> {
             page3(),
 
           ],
+
+
         ),
+
+        bottomNavigationBar: BottomNavigationBar(
+            backgroundColor: Colors.blue,
+            selectedItemColor: Colors.white,
+            unselectedItemColor: Colors.grey,
+            items: const [
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+              BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Setting"),
+              BottomNavigationBarItem(icon: Icon(Icons.person),label: "Profile"),
+
+        ]),
       ),
     );
   }
