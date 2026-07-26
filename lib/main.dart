@@ -18,6 +18,7 @@ class _MyAppState extends State<MyApp> {
   PageController _controller = PageController(
     initialPage: 0,
   );
+  int selectedIndex = 0; // for bottomnavigation
 
   @override
   Widget build(BuildContext context) {
@@ -66,6 +67,13 @@ class _MyAppState extends State<MyApp> {
             backgroundColor: Colors.blue,
             selectedItemColor: Colors.white,
             unselectedItemColor: Colors.grey,
+
+            currentIndex: selectedIndex,
+            onTap:(index){
+              setState(() {
+                selectedIndex = index;
+              });
+            },
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
               BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Setting"),
