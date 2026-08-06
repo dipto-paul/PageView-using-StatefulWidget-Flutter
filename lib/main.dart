@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
 
-  PageController _controller = PageController(
+  final PageController _controller = PageController(
     initialPage: 0,
   );
   int selectedIndex = 0; // for bottomnavigation
@@ -75,7 +75,7 @@ class _MyAppState extends State<MyApp> {
               });
             },
             items: const [
-              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+              BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home "),
               BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Setting"),
               BottomNavigationBarItem(icon: Icon(Icons.person),label: "Profile"),
 
