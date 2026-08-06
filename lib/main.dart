@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
         endDrawer: Drawer( // sudhu drawer dile bam side e, endDrawer dile dan side e hobe
           child: Column(
             children: [
-              DrawerHeader(child: Text("Navigation Drawer",style: TextStyle(color:Colors.black,fontSize: 20,fontWeight: FontWeight.bold)),
+              DrawerHeader(child: Text("Navigation Drawer ",style: TextStyle(color:Colors.black,fontSize: 20,fontWeight: FontWeight.bold)),
               ),
               Padding(padding: EdgeInsets.all(10)),
               ListTile(
